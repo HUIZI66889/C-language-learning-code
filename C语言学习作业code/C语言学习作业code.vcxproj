@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="branch and loop.c" />
     <ClCompile Include="练习.c" />
+    <ClCompile Include="课程代码.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
