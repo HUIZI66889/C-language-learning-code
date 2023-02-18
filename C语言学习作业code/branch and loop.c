@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 //给定两个数，求这两个数的最大公约数
+//测试
 int main()
 {
 	int a = 0;
