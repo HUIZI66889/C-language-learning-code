@@ -1,6 +1,78 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
+////B站P10
+////写一个函数可以找到两个数中的较大值
+//int get_max(int x, int y)
+//{
+//	if (x > y)
+//		return x;
+//	else
+//		return y;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int max = get_max(a, b);
+//	printf("max = %d\n", max);
+//	return 0;
+//}
+
+
+////B站P10
+////写一个函数可以找到两个数中的较大值（自己写的）
+//
+//int bigger(int x , int y)
+//{
+//	if (x > y)
+//		return x;
+//	    //printf("%d",x);
+//	else
+//		return y;
+//		//printf("%d", y);
+//}
+//int main()
+//{
+//	int a = 0;
+//	int b = 0;
+//	scanf("%d", &a);
+//	scanf("%d", &b);
+//	bigger(a, b);
+//	int big = bigger(a, b); //把bigger函数的返回值放在big里面再打印出来，也可以直接在函数中打印
+//	printf("%d", big);
+//	return 0;
+//}
+
+
+
+////B站P10
+////尝试使用memset函数
+//int main()
+//{
+//	char arr[] = "hello world";
+//	memset(arr, '*', 5);
+//	printf("%s\n", arr);
+//	return 0;
+//}
+
+
+
+////B站P10
+////尝试使用strlen函数
+//#include<string.h>
+//int main()
+//{
+//	char arr1[] = "bit";
+//	char arr2[20] = "###########";
+//	strcpy(arr2, arr1);
+//	printf("%s\n", arr2);
+//	return 0;
+//}
+
+
+
+////B站P9
 ////go to 语句
 ////一个关机程序
 //#include<string.h>
