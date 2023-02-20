@@ -1,6 +1,41 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
+//写一个函数交换两个整形的内容
+//当实参传给形参的时候，形参其实是实参的一份临时拷贝，对形参的修改是不会改变实参的
+void Swap(int* pa, int* pb) //使用pa,pb两个指针进行接收
+{
+	int tmp = 0;
+	tmp = *pa; //*pa就是外面的a
+	*pa = *pb;
+	*pb = tmp;
+}
+int main()
+{
+	int a = 10;
+	int b = 20;
+	int* pa = &a;
+	int* pb = &b;
+	Swap(&a, &b);   //把a和b的地址传给Swap这个函数
+	printf("a=%d b=%d\n", a, b);
+	return 0;
+}
+
+
+////写一个函数交换两个整形的内容
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int tmp = 0;
+//	tmp = a;
+//	a = b;
+//	b = tmp;
+//	printf("a = %d b = %d\n", a, b);
+//	return 0;
+//}
+
+
 ////B站P10
 ////写一个函数可以找到两个数中的较大值
 //int get_max(int x, int y)
