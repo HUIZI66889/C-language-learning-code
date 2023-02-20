@@ -1,25 +1,52 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
-//写一个函数交换两个整形的内容
-//当实参传给形参的时候，形参其实是实参的一份临时拷贝，对形参的修改是不会改变实参的
-void Swap(int* pa, int* pb) //使用pa,pb两个指针进行接收
+//B站P10
+//写一个函数路判断一个数是不是素数
+
+//是素数返回1，不是素数返回0
+int is_prime(int n)
 {
-	int tmp = 0;
-	tmp = *pa; //*pa就是外面的a
-	*pa = *pb;
-	*pb = tmp;
+	int a = 2;
+	for (a = 2; a <= n + 1; a++)
+	{
+		if (n % a == 0)
+			return 0;
+		else
+			return 1;
+	}
 }
 int main()
 {
-	int a = 10;
-	int b = 20;
-	int* pa = &a;
-	int* pb = &b;
-	Swap(&a, &b);   //把a和b的地址传给Swap这个函数
-	printf("a=%d b=%d\n", a, b);
+	int i = 0;
+	for (i = 100; i <= 200; i++)
+	{
+		if (is_prime(i) == 1) //注意这里如何调用的函数
+			printf("%d ", i);
+	}
 	return 0;
 }
+
+
+////写一个函数交换两个整形的内容
+////当实参传给形参的时候，形参其实是实参的一份临时拷贝，对形参的修改是不会改变实参的
+//void Swap(int* pa, int* pb) //使用pa,pb两个指针进行接收
+//{
+//	int tmp = 0;
+//	tmp = *pa; //*pa就是外面的a
+//	*pa = *pb;
+//	*pb = tmp;
+//}
+//int main()
+//{
+//	int a = 10;
+//	int b = 20;
+//	int* pa = &a;
+//	int* pb = &b;
+//	Swap(&a, &b);   //把a和b的地址传给Swap这个函数
+//	printf("a=%d b=%d\n", a, b);
+//	return 0;
+//}
 
 
 ////写一个函数交换两个整形的内容
