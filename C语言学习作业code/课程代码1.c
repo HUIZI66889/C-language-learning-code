@@ -2,30 +2,72 @@
 #include<stdio.h>
 
 //B站P10
-//写一个函数路判断一个数是不是素数
-
-//是素数返回1，不是素数返回0
-int is_prime(int n)
-{
-	int a = 2;
-	for (a = 2; a <= n + 1; a++)
-	{
-		if (n % a == 0)
-			return 0;
-		else
-			return 1;
-	}
-}
+//写一个函数，实现整形有序数组的二分查找
+//如果找到了返回下标，找不到返回-1
 int main()
 {
-	int i = 0;
-	for (i = 100; i <= 200; i++)
+	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+	int k = 7;
+	int ret = binary_search(arr, k);
+	if (ret == -1)
 	{
-		if (is_prime(i) == 1) //注意这里如何调用的函数
-			printf("%d ", i);
+		printf("找不到指定的数子\n");
+	}
+	else
+	{
+		printf("找到了，下标是：%d\n", ret);
 	}
 	return 0;
 }
+
+////B站P10
+////写一个函数路判断一年是不是闰年
+////是闰年返回1，不是返回0
+//int is_leap_year(int y)
+//{
+//	if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
+//		return 1;
+//	else
+//		return 0; //注意不要在函数里打印
+//}
+//int main()
+//{
+//	int year = 0;
+//	for (year = 1000; year <= 2000; year++)
+//	{
+//		if (is_leap_year(year) == 1)
+//		{
+//			printf("%d ", year);
+//		}
+//	}
+//	return 0;
+//}
+
+
+////B站P10
+////写一个函数路判断一个数是不是素数
+//
+////是素数返回1，不是素数返回0
+//int is_prime(int n)
+//{
+//	int a = 0;
+//	for (a = 2; a <= n - 1; a++) //此处可以优化成a<=sqrt(n)，头文件是include<math.h>
+//	{
+//		if (n % a == 0)
+//			return 0;
+//	}
+//	return 1;
+//}
+//int main()
+//{
+//	int i = 0;
+//	for (i = 100; i <= 200; i++)
+//	{
+//		if (is_prime(i) == 1) //注意这里如何调用的函数
+//			printf("%d ", i);
+//	}
+//	return 0;
+//}
 
 
 ////写一个函数交换两个整形的内容
