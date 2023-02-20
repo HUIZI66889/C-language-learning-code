@@ -21,7 +21,7 @@
     <ClCompile Include="练习.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="课程代码.c">
+    <ClCompile Include="课程代码1.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
