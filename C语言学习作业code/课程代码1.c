@@ -1,16 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
-//B站P10
-//函数的链式访问
-int main()
-{
-	printf("%d", printf("%d", printf("%d", 43)));
-	return 0;
- } //输出结果为4321，内层printf函数打印完之后的返回值给中间的printf,中间函数打印的返回值给外层函数
-//printf函数的返回值是打印在屏幕上字符的个数
+////B站P10
+////函数的链式访问
+//int main()
+//{
+//	printf("%d", printf("%d", printf("%d", 43)));
+//	return 0;
+// } //输出结果为4321，内层printf函数打印完之后的返回值给中间的printf,中间函数打印的返回值给外层函数
+////printf函数的返回值是打印在屏幕上字符的个数
  
- 
+
 ////B站P10
 ////函数的链式访问
 //int main()
@@ -23,6 +23,7 @@ int main()
 //	printf("%d\n", strlen("abc")); //链式访问
 //	return 0;
 //}
+
 
 ////B站P10
 ////写一个函数，每调用这个函数，就会将num的值+1
@@ -84,6 +85,7 @@ int main()
 //	}
 //	return 0;
 //}
+
 
 ////B站P10
 ////写一个函数路判断一年是不是闰年
@@ -214,7 +216,6 @@ int main()
 //}
 
 
-
 ////B站P10
 ////尝试使用memset函数
 //int main()
@@ -224,7 +225,6 @@ int main()
 //	printf("%s\n", arr);
 //	return 0;
 //}
-
 
 
 ////B站P10
@@ -238,7 +238,6 @@ int main()
 //	printf("%s\n", arr2);
 //	return 0;
 //}
-
 
 
 ////B站P9
@@ -265,7 +264,6 @@ int main()
 //	}
 //	return 0;
 //}
-
 
 
 ////B站P9
