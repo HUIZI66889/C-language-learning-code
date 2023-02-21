@@ -24,5 +24,8 @@
     <ClCompile Include="课程代码1.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="课程代码2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
