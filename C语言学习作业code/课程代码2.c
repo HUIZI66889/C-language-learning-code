@@ -3,7 +3,35 @@
 
 ////B站P11
 ////递归
-////编写函数不允许创建临时变量，求字符串的长度
+////编写函数不允许创建临时变量（下例中不用count），求字符串的长度
+//
+////解题流程：把大事化小
+////my_strlen("bit");
+////1+my_strlen("it");
+////1+1+my_strlen("t");
+////1+1+1+my_strlen("");
+////1+1+1+0;
+////3
+//int my_strlen(char* str)
+//{
+//	if (*str != '\0')
+//		return 1 + my_strlen(str + 1);
+//	//str是指向b的，向后加1指向i
+//	else
+//		return 0;
+//}
+//int main()
+//{
+//	char arr[] = "bit";
+//	int len = my_strlen(arr);
+//	printf("len = %d\n", len);
+//	return 0;
+//}
+
+
+////B站P11
+////递归
+////编写函数求字符串的长度
 ////#include<string.h>
 ////模式实现strlen函数
 //int my_strlen(char* str)
