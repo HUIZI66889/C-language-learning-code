@@ -1,15 +1,120 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
-
-//B站P12
-
+//B站P13
 
 
 
+
+
+
+
+
+////B站P13
+////二维数组在内存中的存储
+//int main()
+//{
+//	int arr[3][4] = { { 1,2,3 }, { 4, 5 } };
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < 4; j++)
+//		{
+//			printf("&arr[%d][%d] = %p\n", i,j,&arr[i][j]);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+
+////B站P13
+////二维数组
+//int main()
+//{
+//	int arr[3][4] = { { 1,2,3 }, { 4, 5 } };
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < 4; j++)
+//		{
+//			printf("%d ",arr[i][j]);
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+
+////B站P13
+//一维数组
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int i = 0;
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("&arr[%d] = %p\n", i,&arr[i]);
+//	}
+//	return 0;
+//}
+
+
+////B站P13
+//int main()
+//{
+//	int arr[] = { 1,2,3,4,5,6,7,8,9,0 };
+//	int sz = sizeof(arr) / sizeof(arr[0]); //计算数组大小
+//	int i = 0;
+//	for (i = 0; i < sz; i++);
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+
+////B站P13
+//#include<string.h>
+//int main()
+//{
+//	char arr1[] = "abc";
+//	char arr2[] = { 'a','b','c' };
+//	printf("%d\n", sizeof(arr1)); //4
+//	printf("%d\n", sizeof(arr2)); //3
+//	printf("%d\n", strlen(arr1)); //3
+//	printf("%d\n", strlen(arr2)); //15(随机值)
+//	return 0;
+//}
+
+
+////B站P13
+//int main()
+//{
+//	char arr[] = "abcdef";
+//	//sizeof是计算arr所占空间的大小，包括\0
+//	printf("%d\n", sizeof(arr));
+//	//strlen是在求字符串的长度，找到\0停止
+//	printf("%d\n", strlen(arr));
+//	return 0;
+//}
+
+
+////B站P13
+////创建一个数组-存放10个整形
+//int main()
+//{
+//	int arr[10];
+//	char arr2[5];
+//	return 0;
+//}
 
 
 ////B站P12
+////迭代
 ////求第n个斐波那契数（不考虑溢出）---循环
 //int Fib(int n)
 //{
@@ -38,6 +143,7 @@
 
 
 ////B站P12
+////递归
 ////求第n个斐波那契数（不考虑溢出）---前两个数之和等于第三个数
 //int count = 0;
 //int Fib(int n)
@@ -65,7 +171,7 @@
 
 
 ////B站P12
-////迭代
+////递归
 ////求n的阶乘（不考虑溢出）---递归的方式
 //int Fac2(int n)
 //{
@@ -120,6 +226,7 @@
 ////1+1+1+my_strlen("");
 ////1+1+1+0;
 ////3
+// 
 //int my_strlen(char* str)
 //{
 //	if (*str != '\0')
@@ -138,7 +245,7 @@
 
 
 ////B站P11
-////递归
+////迭代
 ////编写函数求字符串的长度
 ////#include<string.h>
 ////模式实现strlen函数
