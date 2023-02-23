@@ -14,21 +14,4 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="branch and loop.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="练习.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="课程代码1.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="课程代码2.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="课程代码3.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>
