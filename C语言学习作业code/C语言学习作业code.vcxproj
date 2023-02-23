@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="branch and loop.c" />
+    <ClCompile Include="C语言实现小游戏（三子棋）.c" />
     <ClCompile Include="练习.c" />
     <ClCompile Include="课程代码1.c" />
     <ClCompile Include="课程代码2.c" />
