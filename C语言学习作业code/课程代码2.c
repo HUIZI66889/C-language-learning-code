@@ -1,47 +1,47 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
-//B站P13
-//实现一个冒泡函数，将整形数组进行排序
-void bubble_sort(int arr[], int sz)
-{
-	//确定冒泡排序的趟数
-	int i = 0;
-	for (i = 0; i < sz - 1; i++)
-	{
-		int flag = 1; //假设这一趟要排序的数据已经有序
-		//每一趟冒泡排序
-		int j = 0;
-		for (j = 0; j < sz - 1 - i; j++) //sz-1-i是每一趟比较的对儿数
-		{
-			if (arr[j] > arr[j + 1])
-			{
-				int tmp = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = tmp;
-				flag = 0; //本趟排序的数据其实不完全有序
-			}
-		}
-		if (flag == 1)
-		{
-			break; //跳出int i =0下面的for循环
-		}
-	}
-}
-int main()
-{
-	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };
-	int i = 0;
-	int sz = sizeof(arr) / sizeof(arr[0]);
-	//对arr进行排序，排成升序
-	//arr是数组，我们对数组arr进行传参，实际上传递过去的是首元素的地址。eg: &arr[0]
-	bubble_sort(arr,sz); //冒泡排序函数，sz传给函数
-	for (i = 0; i < sz; i++) //再次遍历整个数组
-	{
-		printf("%d ", arr[i]);
-	}
-	return 0;
-}
+////B站P13
+////实现一个冒泡函数，将整形数组进行排序
+//void bubble_sort(int arr[], int sz)
+//{
+//	//确定冒泡排序的趟数
+//	int i = 0;
+//	for (i = 0; i < sz - 1; i++)
+//	{
+//		int flag = 1; //假设这一趟要排序的数据已经有序
+//		//每一趟冒泡排序
+//		int j = 0;
+//		for (j = 0; j < sz - 1 - i; j++) //sz-1-i是每一趟比较的对儿数
+//		{
+//			if (arr[j] > arr[j + 1])
+//			{
+//				int tmp = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = tmp;
+//				flag = 0; //本趟排序的数据其实不完全有序
+//			}
+//		}
+//		if (flag == 1)
+//		{
+//			break; //跳出int i =0下面的for循环
+//		}
+//	}
+//}
+//int main()
+//{
+//	int arr[] = { 9,8,7,6,5,4,3,2,1,0 };
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	//对arr进行排序，排成升序
+//	//arr是数组，我们对数组arr进行传参，实际上传递过去的是首元素的地址。eg: &arr[0]
+//	bubble_sort(arr,sz); //冒泡排序函数，sz传给函数
+//	for (i = 0; i < sz; i++) //再次遍历整个数组
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
 
 
 ////B站P13
