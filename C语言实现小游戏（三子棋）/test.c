@@ -1,6 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-
-#include<stdio.h>
 #include "game.h"
 
 //B站P15
@@ -16,8 +14,11 @@ void menu()
 void game()
 {
 	//数组-存放走出的棋盘信息
-	char board[ROW][COL] = { 0 };
-
+	char board[ROW][COL] = {0}; //全部空格
+	//初始化棋盘
+	InitBoard(board, ROW, COL); //传了数组，行，列过来
+	//打印棋盘
+	DisplayBoard(board, ROW, COL);
 }
 
 void test()
