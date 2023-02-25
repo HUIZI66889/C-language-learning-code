@@ -95,7 +95,7 @@ void ComputerMove(char board[ROW][COL], int row, int col)
 	while (1)
 	{
 		x = rand() % row; //row如果是3的话，模3的结果是0，1，2
-		x = rand() % col; // 使用rand之前调用srand，而且只能调用一次
+		y = rand() % col; // 使用rand之前调用srand，而且只能调用一次
 		if (board[x][y] == ' ')
 		{
 			board[x][y] = '#';
@@ -124,19 +124,19 @@ char IsFull(char board[ROW][COL], int row, int col)
 
 char IsWin(char board[ROW][COL], int row, int col)
 {
-	//判断横三行
+	//判断竖三列
 	int i = 0;
 	for (i = 0; i < row; i++)
 	{
-		if (board[i][0] == board[i][1] && board[i][2] && board[i][1] != ' ')
+		if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][1] != ' ')
 		{
 			return board[i][1];
 		}
 	}
-	//判断竖三列
+	//判断横三行
 	for (i = 0; i < col; i++)
 	{
-		if (board[0][i] == board[1][i] && board[1][i] && board[2][i] && board[1][i] != ' ')
+		if (board[0][i] == board[1][i] && board[1][i]==board[2][i] && board[1][i] != ' ')
 		{
 			return board[1][i];
 		}
@@ -146,7 +146,7 @@ char IsWin(char board[ROW][COL], int row, int col)
 	{
 		return board[1][1];
 	}
-	if (board[2][0] == board[1][1] && board[1][1] == board[0][2] && board[1][1] != ' ')
+	if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[1][1] != ' ')
 	{
 		return board[1][1];
 	}
