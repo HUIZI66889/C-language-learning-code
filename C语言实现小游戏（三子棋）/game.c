@@ -68,11 +68,12 @@ void PlayerMove(char board[ROW][COL], int row, int col)
 		printf("请输入要下的坐标：>");
 		scanf("%d%d", &x, &y);
 		//判断x,y坐标的合法性
-		if (x >= 1 && x <= row && y >= 1 && y <= cal) //用户会想到坐标都是从1开始
+		if (x >= 1 && x <= row && y >= 1 && y <= col) //用户会想到坐标都是从1开始
 		{
-			if (board[x - 1][y - 1] == " ") //返回到数组的坐标
+			if (board[x - 1][y - 1] == ' ') //返回到数组的坐标
 			{
-				board[x - 1][y - 1] = "*";
+				board[x - 1][y - 1] = '*';
+				break;
 			}
 			else
 			{
@@ -84,6 +85,21 @@ void PlayerMove(char board[ROW][COL], int row, int col)
 			printf("坐标非法，请重新输入！\n");
 		}
 	}
+}
 
-
+void ComputerMove(char board[ROW][COL], int row, int col)
+{
+	int x = 0;
+	int y = 0;
+	printf("电脑走：>\n");
+	while (1)
+	{
+		x = rand() % row; //row如果是3的话，模3的结果是0，1，2
+		x = rand() % col; // 使用rand之前调用srand，而且只能调用一次
+		if (board[x][y] == ' ')
+		{
+			board[x][y] = '#';
+			break;
+		}
+	}
 }
