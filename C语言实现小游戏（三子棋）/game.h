@@ -6,3 +6,4 @@
 //º¯ÊıÉùÃ÷
 void InitBoard(char board[ROW][COL],int row,int col);
 void DisplayBoard(char board[ROW][COL], int row, int col);
+void PlayerMove(char board[ROW][COL], int row, int col);
