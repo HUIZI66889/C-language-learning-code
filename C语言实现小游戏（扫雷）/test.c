@@ -18,7 +18,7 @@ void game()
 	char show[ROWS][COLS] = { 0 };
 	//3.初始化
 	InitBoard(mine, ROWS, COLS,'0'); //mine是存放雷的信息
-	InitBoard(show, ROWS, COLS,'*'); //show是排查出来的雷的信息
+	InitBoard(show, ROWS, COLS,'*'); //show是排查出来的雷的信息，需要打印的棋盘
 	//打印棋盘
 	/*DisplayBoard(mine, ROW, COL);*/
 	DisplayBoard(show, ROW, COL);
