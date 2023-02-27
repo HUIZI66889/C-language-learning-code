@@ -17,20 +17,21 @@ void game()
 	//2.排查出的雷的信息
 	char show[ROWS][COLS] = { 0 };
 	//3.初始化
-	InitBoard(mine, ROWS, COLS,'0');
-	InitBoard(show, ROWS, COLS,'*');
+	InitBoard(mine, ROWS, COLS,'0'); //mine是存放雷的信息
+	InitBoard(show, ROWS, COLS,'*'); //show是排查出来的雷的信息
 	//打印棋盘
-	DisplayBoard(mine, ROW, COL);
+	/*DisplayBoard(mine, ROW, COL);*/
 	DisplayBoard(show, ROW, COL);
 	//布置雷
 	SetMine(mine,ROW,COL);
 	//扫雷
-
+	FindMine(mine, show, ROW, COL);
 }
 
 void test()
 {
 	int input = 0;
+	srand((unsigned int)time(NULL));
 	do
 	{
 		menu();
