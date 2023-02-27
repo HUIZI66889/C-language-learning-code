@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#include<stdio.h>
+#include"game.h"
 
 void menu()
 {
@@ -11,7 +11,21 @@ void menu()
 
 void game()
 {
-	printf("扫雷\n");
+	//雷的信息存储
+	//1.布置好的雷的信息
+	char mine[ROWS][COLS] = {0}; //11*11
+	//2.排查出的雷的信息
+	char show[ROWS][COLS] = { 0 };
+	//3.初始化
+	InitBoard(mine, ROWS, COLS,'0');
+	InitBoard(show, ROWS, COLS,'*');
+	//打印棋盘
+	DisplayBoard(mine, ROW, COL);
+	DisplayBoard(show, ROW, COL);
+	//布置雷
+	SetMine(mine,ROW,COL);
+	//扫雷
+
 }
 
 void test()
