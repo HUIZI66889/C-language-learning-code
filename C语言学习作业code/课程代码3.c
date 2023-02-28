@@ -1,13 +1,51 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
-//B站P19
+//B站P20
 //
 int main()
 {
 
 	return 0;
 }
+
+
+////B站P20
+////按位取反（二进制位）
+//int main()
+//{
+//	int a = 0; // 32个0
+//	printf("%d\n", ~a); //~a是32个1为-1
+//	return 0;
+//}
+
+
+////B站P20
+////单目操作符
+//int main()
+//{
+//	short s = 0;
+//	int a = 10;
+//	printf("%d\n", sizeof(s = a + 5)); // 2（short只有两个字节）
+//	printf("%d\n", s); // 0（sizeof括号里放的表达式是不参与运算的）
+//	return 0;
+//}
+
+
+////B站P19
+////单目操作符
+//int main()
+//{
+//	int a = 10;
+//	char c = 'r';
+//	char* p = &c;
+//	int arr[10] = { 0 };
+//	printf("%d\n", sizeof(a)); //4，sizeof计算变量大小可以省略掉a的括号
+//	printf("%d\n", sizeof(c)); //1
+//	printf("%d\n", sizeof(p)); //4
+//	printf("%d\n", sizeof(arr)); //10*4=40
+//	return 0;
+//}
 
 
 ////B站P19
@@ -50,6 +88,7 @@ int main()
 ////移位操作符
 //int main()
 //{
+//  //正数的补码，反码，原码都相同。换成补码再进行移位操作，打印出来的是原码
 //	int a = 16; //二进制：00000000000000000000000000010000（32个比特位）
 //	int b = a >> 1; //右移操作符
 //	printf("%d\n", b);//00000000000000000000000000001000(打印十进制数：8)
@@ -75,11 +114,3 @@ int main()
 //	printf("a = %d\n", a); //2
 //	return 0;
 //}
-
-
-
-
-
-
-
-
