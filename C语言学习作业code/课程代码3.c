@@ -1,13 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
-//B站P20
-//整型提升
-int main()
-{
-
-	return 0;
-}
+////B站P20
+////整型提升
+//int main()
+//{
+//	char c = 1;
+//	printf("%u\n", sizeof(c)); //1
+//	printf("%u\n", sizeof(+c)); //正c，要做整型提升，4
+//	printf("%u\n", sizeof(!c)); //1
+//	return 0;
 
 
 ////B站P20
