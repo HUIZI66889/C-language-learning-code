@@ -2,26 +2,26 @@
 #include<stdio.h>
 
 
-//B站P27
-//模式实现strlen
-int my_strlen(const char *str)
-{
-	int count = 0;
-	arrert(str != NULL); //断言指针，保证指针的有效性
-	while (*str != '\0')
-	{
-		count++;
-		str++;
-	}
-	return count;
-}
-int main()
-{
-	char arr[] = "abcdef";
-	int len = my_strlen(arr);
-	printf("%d\n", len);
-	return 0;
-}
+////B站P27
+////模式实现strlen
+//int my_strlen(const char *str)
+//{
+//	int count = 0;
+//	arrert(str != NULL); //断言指针，保证指针的有效性
+//	while (*str != '\0')
+//	{
+//		count++;
+//		str++;
+//	}
+//	return count;
+//}
+//int main()
+//{
+//	char arr[] = "abcdef";
+//	int len = my_strlen(arr);
+//	printf("%d\n", len);
+//	return 0;
+//}
 
 
 ////B站P27
