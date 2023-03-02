@@ -1,13 +1,73 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
+
 //B站P27
-//
+//模式实现strlen
+int my_strlen(const char *str)
+{
+	int count = 0;
+	arrert(str != NULL); //断言指针，保证指针的有效性
+	while (*str != '\0')
+	{
+		count++;
+		str++;
+	}
+	return count;
+}
 int main()
 {
-
+	char arr[] = "abcdef";
+	int len = my_strlen(arr);
+	printf("%d\n", len);
 	return 0;
 }
+
+
+////B站P27
+////模拟实现库函数strcpy(优化)
+//#include <assert.h>
+//char* my_strcpy(char* dest, const char* src) //*src不能修改，修改会报错
+//{
+//	char* ret = dest;
+//	assert(dest !=NULL);//断言函数
+//	assert(src != NULL);
+//	//把src指向的字符串拷贝到dest指向的空间，包含\0字符
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//	return ret; //返回目的地的起始地址
+//}
+//int main()
+//{
+//	char arr1[] = "###############";
+//	char arr2[] = "bit";
+//	printf("%s\n", my_strcpy(arr1, arr2));
+//	return 0;
+//}
+
+
+////B站P27
+////模拟实现库函数strcpy(优化)
+//void my_strcpy(char* dest, char* src) 
+//{
+//	if (dest != NULL && src != NULL)
+//	{
+//		while (*dest++ = *src++)
+//		{
+//			;
+//		}
+//	}
+//}
+//int main()
+//{
+//	char arr1[] = "###############";
+//	char arr2[] = "bit";
+//	my_strcpy(arr1,arr2);
+//	printf("%s\n", arr1);
+//	return 0;
+//}
 
 
 ////B站P27
@@ -16,7 +76,7 @@ int main()
 //{
 //	while (*src != '\0')
 //	{
-//		*dest = *src;
+//		*dest = *src;//优化：删除下述两行，本行换成  *dest++=*src++
 //		src++;
 //		dest++;
 //	}
