@@ -2,12 +2,29 @@
 #include<stdio.h>
 
 //B站P22
-//
+//指针减指针
 int main()
 {
-	int* p;
+	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	printf("%d", &arr[9] - &arr[0]);//9，中间的元素个数
 	return 0;
 }
+
+////B站P22
+////指针加减整数
+//int main()
+//{
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	int i = 0;
+//	int sz = sizeof(arr) / sizeof(arr[0]);
+//	int* p = arr;//数组名就是首元素地址
+//	for (i = 0; i < sz; i++)
+//	{
+//		printf("%d ", *p);
+//		p = p + 1;//指针向后移一位
+//	}
+//	return 0;
+//}
 
 
 ////B站P21
