@@ -1,6 +1,42 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
+//B站P24
+//字符串逆序（递归实现）
+//编写一个函数reverse_string(char* string)(递归实现)
+//实现：将参数字符串中的字符反向排列
+//要求：不能使用C函数库中的字符串操作函数
+int main()
+{
+
+	return 0;
+}
+
+
+////B站P24
+////实现一个函数，打印乘法口诀表，口诀表的行数和列数自己指定
+////如：输入9，输出9*9口诀表，输出12，输出12*12的乘法口诀表
+//void print_table(int n)
+//{
+//	int i = 0;
+//	for (i = 1; i <= n; i++)
+//	{
+//		int j = 0;
+//		for (j = 1; j <= i; j++)
+//		{
+//			printf("%d*%d=%-3d ", i, i, i * j);
+//		}
+//		printf("\n");
+//	}
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	print_table(n);
+//	return 0;
+//}
+
 
 ////B站P24
 ////使用指针打印数组内容
