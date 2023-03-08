@@ -1,8 +1,45 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
-//B站P32
-//
+
+////B站P32
+////指针数组正确使用方法
+//int main()
+//{
+//	int arr1[] = { 1,2,3,4,5 };
+//	int arr2[] = { 2,3,4,5,6 };
+//	int arr3[] = { 3,4,5,6,7 };
+//	int* parr[] = { arr1,arr2,arr3 };
+//	int i = 0;
+//	for (i = 0; i < 3; i++)
+//	{
+//		int j = 0;
+//		for (j = 0; j < 5; j++)
+//		{
+//			printf("%d ", * (parr[i] + j));//指针向后偏移j位
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+
+////B站P32
+////指针数组
+//int main() 
+//{
+//	int a = 10;
+//	int b = 20;
+//	int c = 30;
+//	int d = 40;
+//	int* arr[4] = { &a,&b,&c,&d };
+//	int i = 0;
+//	for(i = 0; i < 4; i++)
+//	{
+//		printf("%d ", *(arr[i]));
+//	}
+//	return 0;
+//}
 
 
 ////B站P32
