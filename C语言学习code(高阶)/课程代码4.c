@@ -4,14 +4,18 @@
 //B站P40
 //实现strcpy
 #include<assert.h>
-my_strcpy(char* dest, char* src)
+char* my_strcpy(char* dest, const char* src)
 {
 	assert(dest != NULL);
 	assert(dest != NULL);
+	char* ret = dest;
+	//拷贝src指向的字符串到dest指向的空间，包含\0
 	while (*dest++ = *src++)
 	{
 		;
 	}
+	//返回目的空间的起始地址
+	return ret;
 }
 int main()
 {
