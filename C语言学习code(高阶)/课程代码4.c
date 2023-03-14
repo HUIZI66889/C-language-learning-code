@@ -1,6 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
+//B站P52
+//
+
+
+
 ////B站P51
 ////strtok使用
 //int main()
